@@ -1,0 +1,5 @@
+C:\Users\Gilles\documents\visual studio 2010\Projects\Webservice\ClientDateHeure\bin\Debug\ClientDateHeure.exe.config
+C:\Users\Gilles\documents\visual studio 2010\Projects\Webservice\ClientDateHeure\bin\Debug\ClientDateHeure.exe
+C:\Users\Gilles\documents\visual studio 2010\Projects\Webservice\ClientDateHeure\bin\Debug\ClientDateHeure.pdb
+C:\Users\Gilles\documents\visual studio 2010\Projects\Webservice\ClientDateHeure\obj\x86\Debug\ClientDateHeure.exe
+C:\Users\Gilles\documents\visual studio 2010\Projects\Webservice\ClientDateHeure\obj\x86\Debug\ClientDateHeure.pdb

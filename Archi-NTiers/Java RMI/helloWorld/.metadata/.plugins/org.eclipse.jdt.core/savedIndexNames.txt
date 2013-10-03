@@ -1,0 +1,11 @@
+INDEX VERSION 1.126+/auto_home/gentringer/Desktop/Architecture-Ntiers/helloWorld/.metadata/.plugins/org.eclipse.jdt.core
+197278958.index
+935139861.index
+3848131429.index
+399675826.index
+1152664397.index
+2262856505.index
+125411550.index
+1364762194.index
+548200122.index
+3927879410.index

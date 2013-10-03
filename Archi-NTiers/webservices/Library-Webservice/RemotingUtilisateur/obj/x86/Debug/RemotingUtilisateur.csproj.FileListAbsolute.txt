@@ -1,0 +1,5 @@
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingUtilisateur\bin\Debug\RemotingUtilisateur.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingUtilisateur\bin\Debug\RemotingUtilisateur.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingUtilisateur\obj\x86\Debug\RemotingUtilisateur.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingUtilisateur\obj\x86\Debug\RemotingUtilisateur.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingUtilisateur\obj\x86\Debug\RemotingUtilisateur.csprojResolveAssemblyReference.cache

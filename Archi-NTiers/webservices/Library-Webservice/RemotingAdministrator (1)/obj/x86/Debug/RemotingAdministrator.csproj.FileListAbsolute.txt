@@ -1,0 +1,15 @@
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingAdministrator\bin\Debug\RemotingAdministrator.exe
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingAdministrator\bin\Debug\RemotingAdministrator.pdb
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingAdministrator\bin\Debug\RemotingInterfaces.dll
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingAdministrator\bin\Debug\RemotingInterfaces.pdb
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingAdministrator\obj\x86\Debug\RemotingAdministrator.csprojResolveAssemblyReference.cache
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingAdministrator\obj\x86\Debug\RemotingAdministrator.exe
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingAdministrator\obj\x86\Debug\RemotingAdministrator.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingAdministrator\bin\Debug\RemotingAdministrator.exe.config
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingAdministrator\bin\Debug\RemotingAdministrator.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingAdministrator\bin\Debug\RemotingAdministrator.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingAdministrator\bin\Debug\RemotingInterfaces.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingAdministrator\bin\Debug\RemotingInterfaces.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingAdministrator\obj\x86\Debug\RemotingAdministrator.csprojResolveAssemblyReference.cache
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingAdministrator\obj\x86\Debug\RemotingAdministrator.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingAdministrator\obj\x86\Debug\RemotingAdministrator.pdb

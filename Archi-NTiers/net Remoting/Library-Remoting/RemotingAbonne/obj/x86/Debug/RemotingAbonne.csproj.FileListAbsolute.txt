@@ -1,0 +1,7 @@
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingAbonne\bin\Debug\RemotingAbonne.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingAbonne\bin\Debug\RemotingAbonne.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingAbonne\bin\Debug\RemotingInterfaces.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingAbonne\bin\Debug\RemotingInterfaces.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingAbonne\obj\x86\Debug\RemotingAbonne.csprojResolveAssemblyReference.cache
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingAbonne\obj\x86\Debug\RemotingAbonne.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\RemotingAbonne\obj\x86\Debug\RemotingAbonne.pdb

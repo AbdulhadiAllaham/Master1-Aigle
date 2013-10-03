@@ -1,0 +1,13 @@
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\obj\x86\Debug\AbonneForm.csprojResolveAssemblyReference.cache
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\obj\x86\Debug\AbonneForm.Form1.resources
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\obj\x86\Debug\AbonneForm.Properties.Resources.resources
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\obj\x86\Debug\AbonneForm.csproj.GenerateResource.Cache
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\bin\Debug\AbonneForm.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\bin\Debug\AbonneForm.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\bin\Debug\RemotingAbonne.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\bin\Debug\RemotingInterfaces.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\bin\Debug\RemotingAbonne.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\bin\Debug\RemotingInterfaces.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\obj\x86\Debug\AbonneForm.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\obj\x86\Debug\AbonneForm.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AbonneForm\obj\x86\Debug\AbonneForm.FormConnexion.resources

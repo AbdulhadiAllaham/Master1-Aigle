@@ -1,0 +1,7 @@
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\obj\x86\Debug\RemotingPartage.csprojResolveAssemblyReference.cache
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\bin\Debug\RemotingPartage.exe
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\bin\Debug\RemotingPartage.pdb
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\bin\Debug\RemotingInterfaces.dll
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\bin\Debug\RemotingInterfaces.pdb
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\obj\x86\Debug\RemotingPartage.exe
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\obj\x86\Debug\RemotingPartage.pdb

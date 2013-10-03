@@ -1,0 +1,12 @@
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\WCF-Recettes\share\bin\Debug\share.dll.config
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\WCF-Recettes\share\bin\Debug\share.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\WCF-Recettes\share\bin\Debug\share.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\WCF-Recettes\share\obj\Debug\share.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\WCF-Recettes\share\obj\Debug\share.pdb
+C:\Users\Gilles\documents\visual studio 2010\Projects\WCF-Recettes\share\obj\Debug\share.csprojResolveAssemblyReference.cache
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\WCF-RecettesSingleBase\share\bin\Debug\share.dll.config
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\WCF-RecettesSingleBase\share\bin\Debug\share.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\WCF-RecettesSingleBase\share\bin\Debug\share.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\WCF-RecettesSingleBase\share\obj\Debug\share.csprojResolveAssemblyReference.cache
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\WCF-RecettesSingleBase\share\obj\Debug\share.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\WCF-RecettesSingleBase\share\obj\Debug\share.pdb

@@ -1,0 +1,8 @@
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\WebServiceClient\bin\Debug\WebServiceClient.exe.config
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\WebServiceClient\bin\Debug\WebServiceClient.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\WebServiceClient\bin\Debug\WebServiceClient.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\WebServiceClient\obj\x86\Debug\WebServiceClient.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\WebServiceClient\obj\x86\Debug\WebServiceClient.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\WebServiceClient\bin\Debug\RemotingInterfaces.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\WebServiceClient\bin\Debug\RemotingInterfaces.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\WebServiceClient\obj\x86\Debug\WebServiceClient.csprojResolveAssemblyReference.cache

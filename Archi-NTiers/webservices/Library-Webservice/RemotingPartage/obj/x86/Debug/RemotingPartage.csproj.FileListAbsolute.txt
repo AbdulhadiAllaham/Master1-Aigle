@@ -1,0 +1,15 @@
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\obj\x86\Debug\RemotingPartage.csprojResolveAssemblyReference.cache
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\bin\Debug\RemotingPartage.exe
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\bin\Debug\RemotingPartage.pdb
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\bin\Debug\RemotingInterfaces.dll
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\bin\Debug\RemotingInterfaces.pdb
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\obj\x86\Debug\RemotingPartage.exe
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingPartage\obj\x86\Debug\RemotingPartage.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingPartage\bin\Debug\RemotingPartage.exe.config
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingPartage\bin\Debug\RemotingPartage.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingPartage\bin\Debug\RemotingPartage.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingPartage\bin\Debug\RemotingInterfaces.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingPartage\bin\Debug\RemotingInterfaces.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingPartage\obj\x86\Debug\RemotingPartage.csprojResolveAssemblyReference.cache
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingPartage\obj\x86\Debug\RemotingPartage.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingPartage\obj\x86\Debug\RemotingPartage.pdb

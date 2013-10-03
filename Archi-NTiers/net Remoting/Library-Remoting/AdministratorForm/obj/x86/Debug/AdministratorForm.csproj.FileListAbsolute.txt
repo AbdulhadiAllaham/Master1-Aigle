@@ -1,0 +1,12 @@
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\obj\x86\Debug\AdministratorForm.csprojResolveAssemblyReference.cache
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\obj\x86\Debug\AdministratorForm.Form2.resources
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\obj\x86\Debug\AdministratorForm.Properties.Resources.resources
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\obj\x86\Debug\AdministratorForm.csproj.GenerateResource.Cache
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\bin\Debug\AdministratorForm.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\bin\Debug\AdministratorForm.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\bin\Debug\RemotingAdministrator.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\bin\Debug\RemotingInterfaces.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\bin\Debug\RemotingAdministrator.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\bin\Debug\RemotingInterfaces.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\obj\x86\Debug\AdministratorForm.exe
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting\AdministratorForm\obj\x86\Debug\AdministratorForm.pdb

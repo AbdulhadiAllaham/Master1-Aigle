@@ -1,0 +1,8 @@
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingInterfaces\bin\Debug\RemotingInterfaces.dll
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingInterfaces\bin\Debug\RemotingInterfaces.pdb
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingInterfaces\obj\Debug\RemotingInterfaces.dll
+c:\users\gilles\documents\visual studio 2010\Projects\Library-Remoting\RemotingInterfaces\obj\Debug\RemotingInterfaces.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingInterfaces\bin\Debug\RemotingInterfaces.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingInterfaces\bin\Debug\RemotingInterfaces.pdb
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingInterfaces\obj\Debug\RemotingInterfaces.dll
+C:\Users\Gilles\Documents\Visual Studio 2010\Projects\Library-Remoting-Webservice\RemotingInterfaces\obj\Debug\RemotingInterfaces.pdb

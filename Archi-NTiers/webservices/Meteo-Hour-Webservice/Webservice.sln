@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webservice", "Webservice\Webservice.csproj", "{5E1BB08A-B566-4134-8C32-D0A626E9AE99}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite2", "..\..\WebSites\WebSite2\", "{73070D60-9625-47D1-8B80-080AEC9FD426}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/WebSite2"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebSite2\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebSite2\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WebSite2"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebSite2\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebSite2\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4457"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientDateHeure", "ClientDateHeure\ClientDateHeure.csproj", "{327A974F-3323-4464-8538-4B04A16E133F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E1BB08A-B566-4134-8C32-D0A626E9AE99}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{5E1BB08A-B566-4134-8C32-D0A626E9AE99}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{5E1BB08A-B566-4134-8C32-D0A626E9AE99}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{5E1BB08A-B566-4134-8C32-D0A626E9AE99}.Debug|x86.ActiveCfg = Debug|x86
+		{5E1BB08A-B566-4134-8C32-D0A626E9AE99}.Debug|x86.Build.0 = Debug|x86
+		{5E1BB08A-B566-4134-8C32-D0A626E9AE99}.Release|Any CPU.ActiveCfg = Release|x86
+		{5E1BB08A-B566-4134-8C32-D0A626E9AE99}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{5E1BB08A-B566-4134-8C32-D0A626E9AE99}.Release|Mixed Platforms.Build.0 = Release|x86
+		{5E1BB08A-B566-4134-8C32-D0A626E9AE99}.Release|x86.ActiveCfg = Release|x86
+		{5E1BB08A-B566-4134-8C32-D0A626E9AE99}.Release|x86.Build.0 = Release|x86
+		{73070D60-9625-47D1-8B80-080AEC9FD426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73070D60-9625-47D1-8B80-080AEC9FD426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73070D60-9625-47D1-8B80-080AEC9FD426}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{73070D60-9625-47D1-8B80-080AEC9FD426}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{73070D60-9625-47D1-8B80-080AEC9FD426}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{73070D60-9625-47D1-8B80-080AEC9FD426}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{73070D60-9625-47D1-8B80-080AEC9FD426}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{73070D60-9625-47D1-8B80-080AEC9FD426}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{73070D60-9625-47D1-8B80-080AEC9FD426}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{73070D60-9625-47D1-8B80-080AEC9FD426}.Release|x86.ActiveCfg = Debug|Any CPU
+		{327A974F-3323-4464-8538-4B04A16E133F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{327A974F-3323-4464-8538-4B04A16E133F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{327A974F-3323-4464-8538-4B04A16E133F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{327A974F-3323-4464-8538-4B04A16E133F}.Debug|x86.ActiveCfg = Debug|x86
+		{327A974F-3323-4464-8538-4B04A16E133F}.Debug|x86.Build.0 = Debug|x86
+		{327A974F-3323-4464-8538-4B04A16E133F}.Release|Any CPU.ActiveCfg = Release|x86
+		{327A974F-3323-4464-8538-4B04A16E133F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{327A974F-3323-4464-8538-4B04A16E133F}.Release|Mixed Platforms.Build.0 = Release|x86
+		{327A974F-3323-4464-8538-4B04A16E133F}.Release|x86.ActiveCfg = Release|x86
+		{327A974F-3323-4464-8538-4B04A16E133F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

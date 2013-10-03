@@ -1,0 +1,97 @@
+!SESSION 2013-01-28 10:45:45.114 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=fr_FR
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2013-01-28 10:46:11.768
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-01-28 10:46:11.768
+!MESSAGE Commands should really have a category: plug-in='jasko.tim.lisp', id='jasko.tim.lisp.actions.ProfileFunctionAction', categoryId='jasko.tim.lisp.category2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-01-28 10:46:11.768
+!MESSAGE Commands should really have a category: plug-in='jasko.tim.lisp', id='jasko.tim.lisp.actions.ProfileReportAction', categoryId='jasko.tim.lisp.category2'
+!SUBENTRY 1 org.eclipse.ui 2 0 2013-01-28 10:46:11.768
+!MESSAGE Commands should really have a category: plug-in='jasko.tim.lisp', id='jasko.tim.lisp.actions.ProfileResetAction', categoryId='jasko.tim.lisp.category2'
+
+!ENTRY org.eclipse.ui 4 4 2013-01-28 11:04:26.427
+!MESSAGE Cannot create or restore 'HelloWorld' because it already exists.
+
+!ENTRY org.eclipse.ui 4 0 2013-01-28 11:04:26.431
+!MESSAGE Cannot create or restore 'HelloWorld' because it already exists.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot create or restore 'HelloWorld' because it already exists.
+	at org.eclipse.ltk.internal.core.refactoring.resource.UndoDeleteResourceChange.perform(UndoDeleteResourceChange.java:67)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.internal.core.refactoring.UndoableOperation2ChangeAdapter$1.run(UndoableOperation2ChangeAdapter.java:320)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1782)
+	at org.eclipse.ltk.internal.core.refactoring.UndoableOperation2ChangeAdapter.executeChange(UndoableOperation2ChangeAdapter.java:350)
+	at org.eclipse.ltk.internal.core.refactoring.UndoableOperation2ChangeAdapter.undo(UndoableOperation2ChangeAdapter.java:182)
+	at org.eclipse.core.commands.operations.TriggeredOperations.undo(TriggeredOperations.java:227)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.doUndo(DefaultOperationHistory.java:415)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.undo(DefaultOperationHistory.java:1280)
+	at org.eclipse.ui.operations.UndoActionHandler.runCommand(UndoActionHandler.java:78)
+	at org.eclipse.ui.operations.OperationHistoryActionHandler$4.run(OperationHistoryActionHandler.java:311)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:507)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.access$6(TimeTriggeredProgressMonitorDialog.java:1)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog$2.run(TimeTriggeredProgressMonitorDialog.java:203)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.run(TimeTriggeredProgressMonitorDialog.java:216)
+	at org.eclipse.ui.operations.OperationHistoryActionHandler.run(OperationHistoryActionHandler.java:326)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.ui.actions.RetargetAction.runWithEvent(RetargetAction.java:230)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:119)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:470)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:824)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:880)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:569)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:510)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:125)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1467)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1175)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1200)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1185)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1212)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:706)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:2837)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:703)
+	at org.eclipse.swt.widgets.Tree.gtk_key_press_event(Tree.java:1942)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1570)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4587)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4191)
+	at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(OS.java:7588)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1185)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:1860)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3110)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+!SUBENTRY 1 org.eclipse.ltk.core.refactoring 4 0 2013-01-28 11:04:26.433
+!MESSAGE Cannot create or restore 'HelloWorld' because it already exists.
