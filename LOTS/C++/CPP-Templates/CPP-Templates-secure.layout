@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="headers/chimie/Molecule.h" open="0" top="0" tabpos="0">
+		<Cursor position="409" topLine="0" />
+	</File>
+	<File name="headers/graphe/Graphe.h" open="0" top="0" tabpos="0">
+		<Cursor position="436" topLine="0" />
+	</File>
+	<File name="headers/grapheTemplate/AreteTemplate.h" open="0" top="0" tabpos="0">
+		<Cursor position="1417" topLine="63" />
+	</File>
+	<File name="headers/grapheTemplate/GrapheTemplate.h" open="1" top="0" tabpos="1">
+		<Cursor position="505" topLine="15" />
+	</File>
+	<File name="headers/grapheTemplate/SommetTemplate.h" open="0" top="0" tabpos="0">
+		<Cursor position="697" topLine="0" />
+	</File>
+	<File name="headers/informatique/Reseau.h" open="0" top="0" tabpos="0">
+		<Cursor position="364" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="967" topLine="22" />
+	</File>
+	<File name="source/chimie/Molecule.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="342" topLine="2" />
+	</File>
+	<File name="source/graphe/Graphe.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="421" topLine="10" />
+	</File>
+	<File name="source/informatique/Reseau.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="332" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

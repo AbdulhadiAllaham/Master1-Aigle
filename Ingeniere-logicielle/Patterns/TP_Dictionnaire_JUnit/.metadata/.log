@@ -1,0 +1,20 @@
+!SESSION 2012-10-14 12:45:24.903 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_35
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/Gilles/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data /Users/Gilles/Documents/Université/Master 1 AIGLE/AIGLE - Semestre 1/Ingénierie Logicielle/TP/workspace/TP_Dictionnaire -product org.eclipse.epp.package.java.product -keyring /Users/Gilles/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-10-14 12:45:27.726
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-12-31 17:20:13.556 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/Gilles/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data /Users/Gilles/Dropbox/Master1Aigle/Ingénierie Logicielle/TP_Dictionnaire_JUnit -product org.eclipse.epp.package.java.product -keyring /Users/Gilles/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-12-31 17:20:16.553
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

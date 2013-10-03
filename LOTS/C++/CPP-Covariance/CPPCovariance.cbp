@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CPPCovariance" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TestCovariance" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TestCovariance" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Chimie/Atome.cpp" />
+		<Unit filename="Chimie/Atome.h" />
+		<Unit filename="Chimie/Liaison.cpp" />
+		<Unit filename="Chimie/Liaison.h" />
+		<Unit filename="Chimie/Molecule.cpp" />
+		<Unit filename="Chimie/Molecule.h" />
+		<Unit filename="General/Arete.cpp" />
+		<Unit filename="General/Arete.h" />
+		<Unit filename="General/Graphe.cpp" />
+		<Unit filename="General/Graphe.h" />
+		<Unit filename="General/Sommet.cpp" />
+		<Unit filename="General/Sommet.h" />
+		<Unit filename="Informatique/Lien.cpp" />
+		<Unit filename="Informatique/Lien.h" />
+		<Unit filename="Informatique/Noeud.cpp" />
+		<Unit filename="Informatique/Noeud.h" />
+		<Unit filename="Informatique/Reseau.cpp" />
+		<Unit filename="Informatique/Reseau.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

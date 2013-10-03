@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CPP-Templates" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/LOTSGenercite" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="--std=c++11" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/LOTSGenercite" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="headers/chimie/Atome.h" />
+		<Unit filename="headers/chimie/Liaison.h" />
+		<Unit filename="headers/chimie/Molecule.h" />
+		<Unit filename="headers/graphe/Arete.h" />
+		<Unit filename="headers/graphe/Graphe.h" />
+		<Unit filename="headers/graphe/Sommet.h" />
+		<Unit filename="headers/grapheTemplate/AreteTemplate.h" />
+		<Unit filename="headers/grapheTemplate/GrapheTemplate.h" />
+		<Unit filename="headers/grapheTemplate/SommetTemplate.h" />
+		<Unit filename="headers/informatique/Lien.h" />
+		<Unit filename="headers/informatique/Noeud.h" />
+		<Unit filename="headers/informatique/Reseau.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="source/chimie/Atome.cpp" />
+		<Unit filename="source/chimie/Liaison.cpp" />
+		<Unit filename="source/chimie/Molecule.cpp" />
+		<Unit filename="source/graphe/Arete.cpp" />
+		<Unit filename="source/graphe/Graphe.cpp" />
+		<Unit filename="source/graphe/Sommet.cpp" />
+		<Unit filename="source/informatique/Lien.cpp" />
+		<Unit filename="source/informatique/Noeud.cpp" />
+		<Unit filename="source/informatique/Reseau.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

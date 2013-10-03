@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="../TemplateCPP2/General/Arete.cpp" open="1" top="0" tabpos="19">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../TemplateCPP2/General/Arete.h" open="1" top="0" tabpos="16">
+		<Cursor position="163" topLine="2" />
+	</File>
+	<File name="../TemplateCPP2/General/Graphe.cpp" open="1" top="1" tabpos="18">
+		<Cursor position="352" topLine="0" />
+	</File>
+	<File name="../TemplateCPP2/General/Graphe.h" open="1" top="0" tabpos="17">
+		<Cursor position="650" topLine="5" />
+	</File>
+	<File name="../TemplateCPP2/General/Sommet.cpp" open="1" top="0" tabpos="20">
+		<Cursor position="0" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

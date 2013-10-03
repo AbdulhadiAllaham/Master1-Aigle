@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:comp="Composants.*">
+
+   <mx:Script>
+       <![CDATA[
+           import mx.controls.Alert;
+           public function valider():void {
+               grille.toJSON();
+           }
+       ]]>
+   </mx:Script>
+
+   <mx:Panel title="Interface de topographie ! " width="100%" height="100%">
+      <mx:HBox width="100%" height="100%">
+
+          <mx:VBox width="75%" height="100%">
+               <comp:Grille id="grille" height="80%" />
+               <mx:VBox id="accordeon" width="30%" height="20%">
+                       <mx:Accordion width="400" height="50%">
+                               <mx:HBox label="Ouvertures" id="ouvertures">
+                                       <mx:Button label="Porte" height="65" width="65" />
+                                       <mx:Button label="Fenêtre" height="65" width="65" />
+                               </mx:HBox>
+                               <mx:HBox label="Objets" id="objets">
+                                       <mx:Button label="Produit1" height="65" width="65" />
+                                       <mx:Button label="Produit2" height="65" width="65" />
+                               </mx:HBox>
+                       </mx:Accordion>
+               </mx:VBox>
+          </mx:VBox>
+
+          <mx:VBox width="25%" height="100%"> 
+               <mx:VBox height="15%"> 
+                        <mx:Label id="label1" text="Réglages" fontWeight="bold" />
+               </mx:VBox>
+
+               <mx:VBox height="25%"> 
+                        <mx:Label text="de la dimension de l'espace" /> 
+                        <mx:HSlider id="slider" minimum="5" maximum="40" snapInterval="5" value="40"
+                                     change="grille.paint(slider.value);" />  
+               </mx:VBox>
+               <mx:VBox height="25%"> 
+                        <mx:Label text="de la hauteur des murs" /> 
+                        <mx:HSlider id="sliderHMurs" minimum="5" maximum="40" snapInterval="5" value="20"
+                                     change="grille.paint(slider.value);" />  
+               </mx:VBox>
+               <mx:VBox height="25%"> 
+                        <mx:Label text="de l'épaisseur des murs" /> 
+                        <mx:HSlider id="sliderEMurs" minimum="5" maximum="40" snapInterval="5" value="20"
+                                     change="grille.paint(slider.value);" />  
+               </mx:VBox>
+      
+               <mx:VBox height="10%"> 
+                        <mx:Button label="Valider" click="valider()" />
+               </mx:VBox>
+          </mx:VBox>
+
+      </mx:HBox>
+  </mx:Panel>
+
+</mx:Application>

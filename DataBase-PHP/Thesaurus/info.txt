@@ -1,0 +1,8 @@
+Log Oracle : system
+MdP Oracle : thesaurus
+
+
+Bidouilles possibles à faire si erreurs :
+
+- Décommenter la ligne de l'extension OCI dans le fichier config de PHP
+- Démarrer les services "OracleMTS RecoveryService" et "OracleServiceXE" (dans le gestionnaires des tâches)

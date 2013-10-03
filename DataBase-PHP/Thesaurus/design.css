@@ -1,0 +1,304 @@
+html, body
+{
+	padding : 0;
+	margin : 0;
+	height : 100%;
+}
+
+body
+{
+	background-color : #014467;
+	font-family : Arial;
+}
+
+#gauche
+{
+	border : 1px solid;
+	width : 40%;
+	height : 400px;
+	border-radius : 30px;
+	box-shadow : 6px 6px 15px black;
+	text-align : center;
+	float : left;
+	background-color : #FFFFFF;
+}
+
+#livesearch
+  { 
+  margin:0px;
+  width:0px; 
+}
+
+#gauche *
+{
+	margin-bottom : 20px;
+}
+
+#gauche input[type="button"]
+{
+	margin-top : 50px;
+	width : 200px;
+	border-radius : 10px;
+	font-size : 20px;
+	box-shadow : 6px 6px 15px black;
+}
+
+#droite
+{
+	border : 1px solid;
+	width : 40%;
+	height : 400px;
+	border-radius : 30px;
+	box-shadow : 6px 6px 15px black;
+	text-align : center;
+	float : left;
+	margin-left : 10%;
+	background-color : #FFFFFF;
+}
+
+#droite img, #gauche img
+{
+	width : 125%;
+	margin-left : -12.5%;
+}
+
+#divIndex
+{
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 10%;
+	width : 1000px;
+}
+
+
+/*footer
+{
+	width: 100%;
+	border : 1px solid;
+}*/
+
+hr
+{
+	margin-left : 50px;
+	margin-right : 50px;
+}
+
+legend
+{
+	font-size : 18px;
+}
+
+fieldset
+{
+	border-color : #9BCA00;
+}
+
+form>fieldset
+{
+	margin-left : 30px;
+	width : 450px;
+	/*margin-right : 30px;*/
+}
+
+#formu2>p
+{
+	margin-left : 10px;
+}
+
+#formu3>p
+{
+	margin-left : 10px;
+}
+
+label
+{
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+
+.afficTerme
+{
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+
+.verticalAlign
+{
+	vertical-align: middle;
+}
+
+.titre
+{
+	font-size : 22px;
+}
+
+#general
+{
+	margin-left : auto;
+	margin-right : auto;
+	/*width : 784px;*/
+	width : 65%;
+	min-height : 100%;
+	background-color : #FFFFFF;
+	border-radius : 0px 0px 30px 30px;
+}
+
+/*
+#general {
+	margin-left : auto;
+	margin-right : auto;
+width : 75%;
+margin-bottom : 0;
+padding : 5px;
+color : white;
+	background-color : #FFFFFF;
+background-repeat : repeat-x;
+border-style : solid;
+border-width : 3px;
+border-color : black;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+	border-radius : 0px 0px 30px 30px;
+}*/
+
+#contenu
+{
+	width : 75%;
+	height : 100%;
+	min-height : 100%;
+	margin-left : auto;
+	margin-right : auto;
+	clear : both; /* Pour que "contenu" ne soit pas chevauché par "blocRecherche" et "blocLog" */
+	/*overflow : scroll;*/
+}
+
+#contenu li
+{
+	margin-top : 10px;
+}
+
+#bandeau
+{
+	width : 100%;
+	height : 156px;
+	background-color : #259cda;
+}
+
+#bandeau img
+{
+	display : block;
+	width : 50%;
+	height : 100%;
+	margin-left : auto;
+	margin-right : auto;
+}
+
+#contenu a, #blocLog a
+{
+	color : black;
+}
+
+#contenu a:hover
+{
+	color : #9BCA00;
+}
+
+#formu2>fieldset>p
+{
+	font-size : 16px;
+}
+
+
+#blocRecherche
+{
+	width : 65%;
+	height : 100px;
+	float : left;
+	margin-left : 40px;
+}
+
+#recherche
+{
+	border-radius : 20px;
+	padding-left : 10px;
+	padding-right : 10px;
+}
+
+.searchIndex
+{
+	width : 75%;
+	border-radius : 20px;
+	padding-left : 10px;
+	padding-right : 10px;
+	margin-bottom : -20px;
+}
+
+
+#blocLog
+{
+	width : 20%;
+	height : 100px;
+	float : right;
+	text-align : center;
+	margin-right : -4.3%;
+
+}
+
+
+#blocLog img
+{
+	margin-right : -6.5%;
+	margin-left : -33.3%;
+	height : 100px;
+}
+
+#blocLog p
+{
+	margin-left : -20.3%;
+
+}
+
+.classLog
+{
+	position : relative;
+	top : -100px;
+}
+
+.btnAjout
+{
+	margin-top : -5px;
+	margin-bottom : 5px;
+	width : 200px;
+	border-radius : 10px;
+	font-size : 20px;
+	box-shadow : 6px 6px 10px black;
+}
+
+.valid
+{
+	margin-top : 20px;
+	float : center;
+}
+
+.titreTerme
+{
+	margin-left : -15px;
+}
+
+.petit
+{
+	font-size : 13px;
+	margin-top : -15px;
+}
+
+.fieldsetDef
+{
+	min-height : 100px;
+}
+
+
+

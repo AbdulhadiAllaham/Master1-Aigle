@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Client APIs</title>
+
+        <link rel="stylesheet" href="simpletodo_client_browser/css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="simpletodo_client_browser/css/bootstrap.min.css" type="text/css" />
+
+        <script src="simpletodo_api/js/jquery.min.js"></script>
+        <script src="simpletodo_api/js/jquery-ui-1.8.16.custom.min.js"></script>
+
+
+        <style>
+            body {
+                padding-top: 40px;
+            }
+            #main {
+                margin-top: 80px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="fill">
+                <div class="container">
+                    <a class="brand" href="index.php">Gestionnaire de Tache TODO</a>
+                </div>
+            </div>
+        </div>
+        <div id="main" class="container">
+            <form class="form-stacked" method="POST" action="simpletodo_client_browser/index.php">
+                <div class="actions">
+                    <button type="submit" name="login_submit" class="btn primary large">Le Client (Google Maps et Flickr)</button>
+                </div>
+            </form>
+            
+        </div>
+    </body>
+</html>

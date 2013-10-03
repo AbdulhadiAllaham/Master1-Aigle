@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LOTSGenercite" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/LOTSGenercite" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="--std=c++11" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/LOTSGenercite" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/chimie/Atome.h" />
+		<Unit filename="include/chimie/Liaison.h" />
+		<Unit filename="include/chimie/Molecule.h" />
+		<Unit filename="include/general/Arret.h" />
+		<Unit filename="include/general/Graph.h" />
+		<Unit filename="include/general/Sommet.h" />
+		<Unit filename="include/generalT/AreteT.h" />
+		<Unit filename="include/generalT/GrapheT.h" />
+		<Unit filename="include/generalT/SommetT.h" />
+		<Unit filename="include/informatique/Lien.h" />
+		<Unit filename="include/informatique/Noeud.h" />
+		<Unit filename="include/informatique/Reseau.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/chimie/Atome.cpp" />
+		<Unit filename="src/chimie/Liaison.cpp" />
+		<Unit filename="src/chimie/Molecule.cpp" />
+		<Unit filename="src/general/Arret.cpp" />
+		<Unit filename="src/general/Graph.cpp" />
+		<Unit filename="src/general/Sommet.cpp" />
+		<Unit filename="src/informatique/Lien.cpp" />
+		<Unit filename="src/informatique/Noeud.cpp" />
+		<Unit filename="src/informatique/Reseau.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
