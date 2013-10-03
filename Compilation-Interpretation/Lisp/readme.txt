@@ -50,6 +50,5 @@
 (vm-excute '(fibo 8))
 
 
-;; à partir de fibo de 12 : dépassement de la pile, nous n'avons pas encore pu résoudre ce problème
 
 --------------------------------------------------------------------------------------------------------------------
