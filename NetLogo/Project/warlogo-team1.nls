@@ -1,0 +1,375 @@
+;;----------------------------------------------------------------------------------------------
+
+;;************************************* Comportement explorers ************************************************
+
+
+to-report explorer-t1-action
+  let ri fga_reflexes-explorer
+  
+  ifelse (ri != "")
+  [report ri]
+  [if (ctask = "initial-state")
+    [set ctask "fga_explorer-search"]]
+
+  let r runresult ctask
+  report r
+  
+end
+
+;;************************************* Reflexes explorers ************************************************
+; 1. Fuire rocket qui arrive
+; 2. Manger
+; 3. Recevoir messages (dépend de l'état des rockets-launchers), s'il reçoit message: changement d'état => "fga_help"
+;    (Soigner = message envoyé par la base pour désigner les explorateur-soigneurs, on fait un set 1 pour la variable "intentions" des explorateurs)
+;    (Se dirige vers celui qui a besoin de se faire soigner)
+
+to-report fga_reflexes-explorer
+  let rocketclose min-one-of percepts with [is-rocket? self] [distance myself]
+  
+  if rocketclose != nobody 
+  [set-heading rocketclose
+    set-heading get-heading - 110
+    report "move"]
+  
+  if energy <= rocket-damage and not empty-bag? 
+  [report "eat"]
+  
+  if blocked? 
+  [set-random-heading]
+    
+  if not empty? incoming-queue
+  [while [not empty? incoming-queue]
+    [let msgexplorer get-message
+      if ((get-performative msgexplorer) = "soigner")
+        [set intentions 1]
+      if (not empty-bag? and (get-performative msgexplorer = "hungry" )and intentions = 1)
+        [set-heading get-heading-to-sender msgexplorer
+          set ctask "fga_help"]
+      if (not empty-bag? and (get-performative msgexplorer = "fga_help" )and intentions = 1 and not empty-bag?)
+        [set-heading get-heading-to-sender msgexplorer
+          set ctask "fga_help"]
+      if (not empty-bag? and(get-performative msgexplorer = "urgent" )and intentions = 1 and not empty-bag?)
+        [set-heading get-heading-to-sender msgexplorer
+          set ctask "fga_help"]
+    ]
+  ]
+   
+  report ""
+
+end
+  
+ 
+; ************************************* Etat rechercher nourriture ***************************************
+
+; 1. Voit base ennemy => envoit message aux rockets launchers
+; 2. Voit nourriture => se dirige vers la nourriture
+; 3. Voit base amie => changer état "fga_give_base"
+; 4. Percute nourriture : récupère et met dans son sac
+; 5. sac plein => changer état "fga_give_base"
+
+to-report fga_explorer-search
+
+  let enemy-base one-of percepts with [is-base? self and is-my-enemy? myself]
+  let spotted-food percepts with [is-food? self]
+  let closest_food min-one-of spotted-food [distance myself]
+  let hit-food spotted-food with [is-colliding? myself]
+  let my_base min-one-of get-bases [distance myself]
+  let base_percept min-one-of percepts with [is-base? self and is-my-friend? myself] [distance myself]
+  
+  if (enemy-base != nobody)
+  [broadcast-message get-rocket-launchers "cfp" []]
+  
+  if (closest_food  != nobody and not headed-towards? closest_food)
+  [set-heading closest_food]
+    
+  if (base_percept != nobody and not empty-bag?)
+  [set ctask "fga_give-base"]
+  
+  if not full-bag? and length bag <= 1
+  [ifelse any? hit-food
+    [report list "take" one-of hit-food]
+    [report "move"]
+  ]
+    
+  if length bag >= 1
+  [set ctask "fga_give-base" report "move"]
+  
+  report "move"
+  
+end
+
+; ************************************* Etat donner nourriture à la base ***************************************
+; 1. Se dirige vers base amie
+; 2. donne nouriture à la base
+; 3. Si sac vide => etat: fga_explorer_search
+
+
+to-report fga_give-base
+  
+  let my_base min-one-of get-bases [distance myself]
+  
+  set-heading my_base
+  
+  if(in-base? and not empty-bag?) 
+  [report list "give" min-one-of get-bases [distance myself]]
+  
+  if(empty-bag?)
+  [set ctask "fga_explorer-search"]
+  
+  report "move"
+  
+end
+
+
+
+; ************************************* Etat soigneur *************************************************
+; 1. Voit rocket-launcher avec variable intentions = 1
+; 2. Donne nourriture au demandeur
+; 3. Sinon : etat = "fga_explorer_search"
+
+to-report fga_help
+  
+  let give-foot one-of percepts with [is-rocket-launcher? self and intentions = 1 and is-my-friend? self]
+  
+  if (give-foot != nobody and not empty-bag?)
+  [ifelse (any? get-rocket-launchers with [is-colliding? myself and intentions = 1]) 
+    [show (sentence "t'as eu a manger car tavait faim")
+      report list "give" give-foot set ctask fga_move-rocket]
+    [report "move"]
+  ]
+          
+  set ctask "fga_explorer-search"
+  report "move"
+       
+end
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Comportement rocket-launchers ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+to-report rocket-launcher-t1-action
+  
+  let ri fga_reflexes-launchers
+  
+  ifelse (ri != "")
+  [report ri]
+  [if (ctask = "initial-state"   )
+    [set ctask "fga_move-rocket"  set-heading  60]
+  ]
+  
+  let d runresult ctask
+  report d
+
+end
+
+;;************************************* Reflexes rocket launhcers ************************************************
+; 1. Voit explorer-soigneur => envoit message "urgent" (si energy insuffisant pour construire des rockets)
+; 2. Voit base ennemie => envoit message à tous les autres rocket-launchers
+; 3. Voit ennemi (rocketlauncher ou explorateur) => appel à l'aide aux autres rockets-launchers
+; 4. Recoit message pour aider autre rocket-launchers => se dirige vers lui + set "mem = 1" pour qu'ils ne changent pas d'intention
+; 
+
+
+
+to-report fga_reflexes-launchers
+  
+  let infirmier min-one-of get-explorers with [is-my-friend? myself and not empty-bag? and intentions = 1] [distance myself]
+  if(get-energy self <= rocket-cost * 2 and infirmier != nobody)
+  [set-heading infirmier
+    send-message infirmier "urgent" []
+  ]
+  
+  let enemy-base one-of percepts with [is-base? self and is-my-enemy? myself]
+  if (enemy-base != nobody)
+  [broadcast-message other get-rocket-launchers "come-here" []
+    set ctask "fga_attack"
+  ]
+  
+  let targetlauncher min-one-of percepts with [not is-rocket? self and not is-food? self and is-my-enemy? myself and not is-base? self and is-rocket-launcher? self] [distance myself]
+   
+  if (targetlauncher != nobody and ctask ="fga_move-rocket-defense")
+  [broadcast-message other get-rocket-launchers with [ctask = "fga_move-rocket-defense"] "come-fga_help" []]
+   
+  if (targetlauncher != nobody and ctask ="fga_move-rocket")
+  [broadcast-message other get-rocket-launchers with [ctask = "fga_move-rocket"]  "come-fga_help" []]
+  
+  let rocketclose min-one-of percepts with [is-rocket? self] [distance myself]
+  
+  if (rocketclose != nobody and ctask != "fga_attack")
+  [set-heading rocketclose
+    set-heading get-heading - 110
+    report "move"
+  ]
+  
+  
+  ifelse not empty? incoming-queue
+  [while [not empty? incoming-queue]
+    [let msg get-message 
+      if ((get-performative msg) = "defend" and ctask != "fga_move-rocket-defense")
+      [set ctask "fga_move-rocket-defense"]
+      if (get-performative msg = "cfp" and ctask = "fga_move-rocket")
+      [let senderr get-sender msg
+        set-heading senderr
+        set mem 1
+      ]
+      
+      if (get-performative msg = "come-fga_help" and ctask != "fga_attack" and ctask != "fga_move-rocket-defense")
+      [let senderrr get-sender msg
+        set-heading senderrr
+        set mem 1
+      ]
+      
+      if (get-performative msg = "come-here" and ctask != "fga_attack" and ctask != "fga_move-rocket-defense")
+      [let senderrr get-sender msg
+        set-heading senderrr
+        set mem 1
+      ]
+    ]
+  ] 
+  [set mem 0] 
+  
+  if (get-rocket-number = 0 and get-energy self > rocket-cost) 
+  [report "build-rocket"]
+  
+  if (get-energy self < rocket-damage * 3 and not empty-bag?) 
+  [report "eat"]  
+  
+  if blocked? 
+  [set-random-heading
+    if (random 3 = 1) 
+     [set-heading (heading + 0.1 * ((random-float 2) - 1))
+    ]
+  ]
+ 
+  report ""
+  
+end
+
+;;************************************* Etat défaut rocket-launchers ************************************************
+; 1. Voit ennemie => etat = "fga_attack"
+; 2. Regroupement en fonction du plus proche voisin 
+
+to-report fga_move-rocket
+
+  let targetbase min-one-of percepts with [not is-rocket? self and not is-food? self and is-base? self and is-my-enemy? myself ] [distance self]
+  let targetlauncher min-one-of percepts with [not is-rocket? self and not is-food? self and is-my-enemy? myself and not is-base? self and is-rocket-launcher? self] [distance myself]
+  let targetexplorer min-one-of percepts with [not is-rocket? self and not is-food? self and is-my-enemy? myself and not is-base? self and is-explorer? self] [distance myself]
+  let ami percepts with [ is-my-friend? self and not is-rocket? self and is-rocket-launcher? self and empty? incoming-queue and ctask = "fga_move-rocket"]
+  
+  if (targetlauncher != nobody or targetexplorer != nobody or targetbase != nobody and get-rocket-number > 0) 
+  [set ctask "fga_attack"]
+  
+  if any? ami and mem = 0
+  [let voisin  min-one-of ami [distance myself]
+    if distance voisin > 5
+    [let x-component sum [dx] of ami
+      let y-component sum [dy] of ami
+      set-heading atan x-component y-component       
+      set x-component  ( sum [dx] of ami / count ami)
+      set y-component  ( sum [dy] of ami / count ami)
+      set-heading atan x-component y-component 
+    ]
+  ]
+  
+  report "move"
+  
+end
+
+;;************************************* Etat attaque ************************************************
+; 1. Voit explorateur-soigneur : demande nourriture
+; 2. Voit ennemie => lance rocket
+; 3. Sinon etat : fga_move_rocket
+
+to-report fga_attack
+  
+  let targetbase min-one-of percepts with [not is-rocket? self and not is-food? self and is-base? self and is-my-enemy? myself ] [distance self]
+  let targetlauncher min-one-of percepts with [not is-rocket? self and not is-food? self and is-my-enemy? myself and not is-base? self and is-rocket-launcher? self] [distance myself]
+  let targetexplorer min-one-of percepts with [not is-rocket? self and not is-food? self and is-my-enemy? myself and not is-base? self and is-explorer? self] [distance myself]
+  let explorer_infirmier min-one-of percepts with [is-explorer? self and is-my-friend? myself] [distance myself]
+  
+  if (explorer_infirmier != nobody and energy <= 400 and empty-bag?)
+  [set intentions 1
+    send-message explorer_infirmier "fga_help" []
+  ]
+      
+  if (targetlauncher != nobody and get-energy self > rocket-cost) 
+  [report list "launch-rocket" towards targetlauncher ]
+  
+  if (targetbase != nobody and get-energy self > rocket-cost) 
+  [report list "launch-rocket" towards targetbase ]
+  
+  if (targetexplorer != nobody and get-energy self > rocket-cost) 
+  [report list "launch-rocket" towards targetexplorer]
+  
+  set ctask "fga_move-rocket"
+  report "move"
+  
+end
+
+;;************************************* Rocket move to base and become defender  ************************************************
+; 1. Voit explorateur-soigneur => demande nourriture
+; 2. Se dirige vers base (après avoir été appelé)
+; 3. Reste à proximité de la base pour la défendre
+
+to-report fga_move-rocket-defense
+ 
+  let bring_food min-one-of get-explorers with [is-my-friend? myself and not empty-bag? and intentions = 1] [distance myself]
+  let target min-one-of percepts with [not is-rocket? self and not is-food? self and is-my-enemy? myself] [distance self]   
+  let mabase min-one-of percepts with [is-base? self and is-my-friend? myself] [distance self] 
+  
+  if(empty-bag? and bring_food != nobody and energy < 1000)
+  [set intentions 1
+    send-message bring_food "hungry" []
+  ]
+ 
+  ifelse (mabase != nobody)
+  [if (target != nobody) 
+    [set ctask "fga_attack" report "idle"]]
+  [if (not any? get-bases with [is-colliding? myself])
+    [set-heading min-one-of get-bases [distance myself] report "move"]
+  ]
+    
+  report "move"
+ 
+end
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; BASE BEHAVIOR ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;2 actions principales : 1. Demander à 4 rocket-lauchers de venir défendre la base
+;;                        2. Déterminer les explorers qui sont des explorateur-soigneurs (qui donnent de la nourriture aux rocket-launchers)
+;;Créer les rocket-launchers et les explorateurs (consomme nouriturre si sac non-vide)
+
+
+to-report base-t1-action
+  
+  let danger one-of percepts with [is-rocket-launcher? self and is-my-enemy? myself and not is-rocket? self ]
+  let friend get-rocket-launchers with [ctask = "fga_move-rocket-defense" ]
+  let friend-attacker min-one-of get-rocket-launchers with [ctask != "fga_move-rocket-defense" and not is-colliding? myself] [distance myself]
+  let friend_notcolliding one-of get-rocket-launchers with [not is-colliding? myself]
+  let compter count get-rocket-launchers / 2
+  
+  let explor one-of get-explorers;
+  let explorbeliefs get-explorers with [intentions = 1]
+  let compterexplorer count get-explorers / 3
+  let nouveau_soigneur one-of get-explorers with [not is-colliding? myself]
+   
+  if (count friend < 4 and friend_notcolliding != nobody and friend-attacker != nobody and danger != nobody)
+  [send-message friend-attacker "defend" []]
+    
+  if (count explorbeliefs < compterexplorer and explor != nobody and nouveau_soigneur != nobody)
+  [send-message nouveau_soigneur "soigner" []]
+  
+  
+  if energy > 3500
+    [ifelse (random 2 = 1)
+      [report "build-rocket-launcher"]
+      [report "build-explorer"]
+    ]
+  
+  ifelse empty-bag? 
+    [report "idle"]
+    [report "eat"]
+    
+end
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
